@@ -56,7 +56,9 @@ if [ -f ~/.git-prompt.sh ]; then
 fi
 
 # auto-complete branches, etc
-. /etc/bash_completion.d/git
+if [ -f /etc/bash_completion ]; then
+    . /etc/bash_completion.d/git
+fi
 
 export GIT_PS1_SHOWUPSTREAM="auto"
 export GIT_PS1_SHOWUNTRACKEDFILES=1
