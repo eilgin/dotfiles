@@ -56,7 +56,7 @@ if [ -f ~/.git-prompt.sh ]; then
 fi
 
 # auto-complete branches, etc
-if [ -f /etc/bash_completion ]; then
+if [ -f /etc/bash_completion/git ]; then
     . /etc/bash_completion.d/git
 fi
 
