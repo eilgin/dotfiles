@@ -1,0 +1,42 @@
+[user]
+   name = eilgin
+   email = eilginprod@gmail.com
+[core]
+   editor = vim
+   excludesfile = ~/.gitignore-global
+   autocrlf = false
+[merge]
+   tool = vimdiff
+[alias]
+   lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+   st = status
+   co = checkout
+   ba = branch -v -a
+   slog = log --pretty=oneline
+   nlog = log --name-status
+   dlog = log -p
+   ci = commit -v
+   br = branch -v
+   history = log --graph --pretty=format:'%Cred%h%Creset %d -%Cblue %s%Creset %Cgreen(%ad) %Cblue<%an>%Creset' --abbrev-commit --date=default
+
+   review = whatchanged -p --reverse origin/master..
+   review-full = diff origin/master...
+
+   show-merge = "!sh -c 'git show $1^1..$1' -"
+   diff-merge = "!sh -c 'git diff $1^1..$1' -"
+[color]
+   ui = true
+   status = auto
+   pager = true
+   diff = auto
+   branch = auto
+[grep]
+   linenumber = true
+[color "grep"]
+   match = yellow
+[diff]
+   tool = vimdiff
+   patience = true
+[push]
+   default = current
+
