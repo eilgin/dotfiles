@@ -123,12 +123,6 @@ Plugin 'gmarik/Vundle.vim'
 " Make it look amazing
 Plugin 'altercation/vim-colors-solarized'
 
-" Add a php debugger
-Plugin 'joonty/vdebug.git'
-
-" Better PHP syntax
-Plugin 'StanAngeloff/php.vim.git'
-
 " ================ END Bundle =======================
 
 call vundle#end()
@@ -152,28 +146,8 @@ let g:solarized_termtrans=1
 let g:solarized_termcolors=256
 let g:solarized_visibility = "high"
 let g:solarized_contrast = "high"
-colorscheme solarized
-color solarized
-
-" Vdebug
-"let g:vdebug_options['break_on_open'] = 0 " does not work?
-
-" PHP syntax
-let php_sql_query = 1
-let php_html_in_strings = 1
-let b:sql_type_override = 'mysql'
-let g:sql_type_default = 'mysql'
-let php_parent_error_close = 1
-
-function! PhpSyntaxOverride()
-    hi! def link phpDocTags  phpDefine
-    hi! def link phpDocParam phpType
-endfunction
-
-augroup phpSyntaxOverride
-    autocmd!
-    autocmd FileType php call PhpSyntaxOverride()
-augroup END
+"colorscheme solarized
+"color solarized
 
 " ================ Custom binds =====================
 ":imap ;; <Esc>
