@@ -97,7 +97,7 @@ set sidescroll=1
 
 let $PYTHONHOME='/usr/bin/python'
 " DO THIS THE FIRST TIME :
-" - git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+" - git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 " - vim +PluginInstall +qall
 
 " This file contains the list of plugin installed using vundle plugin manager.
