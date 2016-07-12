@@ -115,7 +115,7 @@ call vundle#begin()
 " ================ START Bundle =======================
 
 " let Vundle manage Vundle (required)
-Plugin 'gmarik/Vundle.vim'
+Plugin 'VundleVim/Vundle.vim'
 
 " file navigator gutter
 "Plugin 'scrooloose/nerdtree.git'
